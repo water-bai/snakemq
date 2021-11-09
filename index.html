@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+<script type="text/javascript" src="./src/index.js"></script>
+<script type="text/javascript">
+  window.onload = function() {
+    snakemq.addListener("aaa",function (value) {
+    console.log(value);
+  });
+
+  function sendMessage() {
+    snakemq.sendMessage("aaa",111);
+  }
+  }
+
+</script>
+
+<button onclick="sendMessage()">发送消息</button>
+
+</body>
+</html>
