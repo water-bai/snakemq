@@ -3,7 +3,7 @@
 ### 使用方法
 
 ```JavaScript
-
+//
 snakemq.addListener("aaa",function (value) {
     console.log(value);
 });
